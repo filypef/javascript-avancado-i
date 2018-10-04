@@ -8,7 +8,7 @@ class NegociacaoController{
 
     adiciona(e){
         e.preventDefault();
-        
+            
         let data = new Date(
             ...this._data.value.split('-')
             .map((item, index) => {
@@ -29,9 +29,5 @@ class NegociacaoController{
         // console.log('Date Spread Operator: ', ...this._data.value.split('-'));
         // //Map - Invoca uma função callback e cria um novo array
         // console.log('Date Spread Operator Map: ', ...this._data.value.split('-').map(function(item, index){return item - index % 2;}));
-
-        
-
-        // const negociacao = new Negociacao();
     }
 }
